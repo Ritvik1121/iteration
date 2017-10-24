@@ -1,6 +1,5 @@
 # Make a local change
-# make another local change
-# make a change from home
+# doing the same thing once for each member of a list
 
 # iteration pattern
 
@@ -14,7 +13,11 @@ def iterate(list):
 	# for each loop
 	for item in list:
 		print item
-
+def add_one(list):
+	#standard fot loop with range
+	for i in range(0, len(list)):
+		list[i] += 1
+	return list
 def print_scores(names, scores):
 	for i in range(0, len(names)):
 		print names[i] , " scored " , scores[i]
