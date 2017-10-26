@@ -54,16 +54,25 @@ def max(numbers):
 #Homework - >
 	# a) Write a function that finds the average of the scores
 def average(numbers):
-	average = sum(numbers) / len(numbers)
+	average = sum(numbers) / (len(numbers) + 1)
 	return average
 	# b) write a second function that also finds the average but drops the lowest two scores
-	
-#def trimmed_mean(lst):
-    #trimmed_lst = sorted(lst)[1:-1]
-    #return sum(trimmed_lst) / len(trimmed_lst)
 
-def remove_n_smallest(lst, n):
-    for _ in range(n):
-        m = min(lst)
-        lst[:] = (x for x in lst if x != m)
-	return sum(lst) / len(lst)
+
+#def remove_n_smallest(lst, n):.
+
+
+    
+def fizz_buzz(numbers):
+	result = []
+	for n in numbers:
+		if n % 3 == 0 and n % 5 == 0:
+			result.append("Fizzbuzz")
+		elif n % 3 == 0:
+			result.append("Fizz")
+		elif n % 5 == 0:
+			result.append("Buzz")
+		else:
+			result.append('Bazz')
+	return result
+		

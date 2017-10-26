@@ -14,12 +14,15 @@ from iteration import *
 
 #congratulations(names, scores)
 
-scores = [1, 3, 4, 2, 4]
+scores = [5, 300, 4, 6, -6, 200, 10, 13, -5, -515]
 
-print(sum(scores))
+#print(sum(scores))
 
-print max(scores)
+#print max(scores)
 
-print average(scores)
+#print average(scores)
 
-print remove_n_smallest(scores, 2)
+#print remove_n_smallest(scores, 2)
+
+print fizz_buzz(scores)
+
