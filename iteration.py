@@ -76,3 +76,15 @@ def fizz_buzz(numbers):
 			result.append('Bazz')
 	return result
 		
+def alternating_sum(numbers):
+	subtract = False
+	total = 0
+	for n in numbers:	
+		if subtract == False:
+			total += n
+			subtract = True
+		elif subtract == True:
+			total -= n
+			subtract = False
+	return total
+

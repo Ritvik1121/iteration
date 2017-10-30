@@ -16,6 +16,8 @@ from iteration import *
 
 scores = [5, 300, 4, 6, -6, 200, 10, 13, -5, -515]
 
+numbers = [1, 3, 2, 4, 5]
+
 #print(sum(scores))
 
 #print max(scores)
@@ -25,4 +27,6 @@ scores = [5, 300, 4, 6, -6, 200, 10, 13, -5, -515]
 #print remove_n_smallest(scores, 2)
 
 print fizz_buzz(scores)
+
+print alternating_sum(numbers)
 
