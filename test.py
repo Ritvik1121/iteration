@@ -20,6 +20,7 @@ numbers = [1, 3, 2, 4, 5]
 
 numberstwo = [4, 11, 23, 14, 3, 40, 26, 17]
 
+numbersthree = [1, 2, 1, 4, 2]
 #print(sum(scores))
 
 #print max(scores)
@@ -34,4 +35,6 @@ print alternating_sum(numbers)
 
 print sum_outside(numbers, 2, 4)
 
-print count_close_remainder(numberstwo, 5)
+print count_close_remainders(numberstwo, 5)
+
+print double_down(numbersthree, 6)

@@ -99,6 +99,19 @@ def sum_outside(numbers, min, max):
 
 def count_close_remainders(numbers, divisor):
 	total = 0
-	if numbers[i] % divsor == 0 or numbers[i] % == 1 or numbers[i] % divisor == 4:
-		total += 1
+	for i in range(0, len(numbers)):
+		if numbers[i] % divisor == 0 or numbers[i] % divisor == 1 or numbers[i] % divisor == 4:
+			total += 1
 	return total
+
+def double_down(numbers, target):
+	result = [maybe_doubled(numbers[0], numbers[0], target)]
+	for i in range(1, len(numbers)):
+		result.append(maybe_doubled(numbers[1], numbers[i-1], target ))
+	return result
+	
+def maybe_doubled(n, prev_n, target):
+	distance = abs(n - target)
+	if n < prev_n or distance <=3:
+		return 2 * n
+	return n
