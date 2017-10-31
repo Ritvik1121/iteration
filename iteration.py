@@ -1,3 +1,4 @@
+import math
 # Make a local change
 # doing the same thing once for each member of a list
 
@@ -54,8 +55,10 @@ def max(numbers):
 #Homework - >
 	# a) Write a function that finds the average of the scores
 def average(numbers):
-	average = sum(numbers) / (len(numbers) + 1)
-	return average
+	total = 0
+	for n in numbers:
+		total += n
+	return total/ len(numbers)
 	# b) write a second function that also finds the average but drops the lowest two scores
 
 
@@ -109,9 +112,18 @@ def double_down(numbers, target):
 	for i in range(1, len(numbers)):
 		result.append(maybe_doubled(numbers[1], numbers[i-1], target ))
 	return result
-	
+
 def maybe_doubled(n, prev_n, target):
 	distance = abs(n - target)
 	if n < prev_n or distance <=3:
 		return 2 * n
 	return n
+
+def standard_dev(numbers):
+	total = 0
+	result = []
+	for i in range(0, len(numbers)):
+		result.append(numbers[i] - average(numbers)) 
+	for i in range(0, len(result)):
+		total += result[i] * result[i]
+	return math.sqrt(total/len(numbers))

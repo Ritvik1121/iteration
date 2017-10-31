@@ -21,6 +21,8 @@ numbers = [1, 3, 2, 4, 5]
 numberstwo = [4, 11, 23, 14, 3, 40, 26, 17]
 
 numbersthree = [1, 2, 1, 4, 2]
+
+height = [600, 470, 170, 430, 300]
 #print(sum(scores))
 
 #print max(scores)
@@ -38,3 +40,5 @@ print sum_outside(numbers, 2, 4)
 print count_close_remainders(numberstwo, 5)
 
 print double_down(numbersthree, 6)
+
+print standard_dev(height)
