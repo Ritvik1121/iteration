@@ -88,3 +88,17 @@ def alternating_sum(numbers):
 			subtract = False
 	return total
 
+def sum_outside(numbers, min, max):
+	total = 0
+	for i in range(0, len(numbers)):
+		if numbers[i] < min:
+			total += numbers[i]
+		elif numbers[i] >= max:
+			total += numbers[i]		
+	return total
+
+def count_close_remainders(numbers, divisor):
+	total = 0
+	if numbers[i] % divsor == 0 or numbers[i] % == 1 or numbers[i] % divisor == 4:
+		total += 1
+	return total

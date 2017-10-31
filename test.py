@@ -18,6 +18,8 @@ scores = [5, 300, 4, 6, -6, 200, 10, 13, -5, -515]
 
 numbers = [1, 3, 2, 4, 5]
 
+numberstwo = [4, 11, 23, 14, 3, 40, 26, 17]
+
 #print(sum(scores))
 
 #print max(scores)
@@ -30,3 +32,6 @@ print fizz_buzz(scores)
 
 print alternating_sum(numbers)
 
+print sum_outside(numbers, 2, 4)
+
+print count_close_remainder(numberstwo, 5)
